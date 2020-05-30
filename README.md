@@ -9,7 +9,8 @@ package main
 
 import (
 	"fmt"
-  	"github.com/gwuah/scully"
+    "github.com/gwuah/scully"
+    "github.com/joho/godotenv"
 )
 
 func main() {
