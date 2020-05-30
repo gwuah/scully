@@ -8,7 +8,7 @@ A golang wrapper around mapbox apis.
 package main
 
 import (
-	"fmt"
+	  "fmt"
     "github.com/gwuah/scully"
     "github.com/joho/godotenv"
 )
