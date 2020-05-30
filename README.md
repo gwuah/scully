@@ -13,9 +13,25 @@ import (
 )
 
 func main() {
-  mapbox := scully.New()
-  fmt.Println(mapbox.Matrix.Greet())
-  // this should print "Hello World"
+  if err := godotenv.Load(); err != nil {
+    log.Println("No .env file found")
+    return
+	}
+
+	mapbox, err := scully.New(os.Getenv("ACCESS_TOKEN"))
+
+	if err != nil {
+    log.Println(err)
+    return
+	}
+
+	response, err := mapbox.Matrix.GetMatrix(os.Getenv("TEST_POINTS"))
+
+	if err != nil {
+    log.Println(err)
+    return
+	}
+
 }
 ```
 
