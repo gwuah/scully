@@ -19,9 +19,9 @@ func main() {
 ```
 
 # Why?
-I'm working on a tool using go and couldn't find a golang mapbox library that suited me.
-So I set out to create one for my usage. Hopefully it helps you too.
-It returns pure json, unparsed, it's up to you to decode the byte and use it.
+I'm working on a tool using go and couldn't find a golang mapbox library that suited me.<br/>
+So I set out to create one for my usage. Hopefully it helps you too.<br/>
+It returns pure json, unparsed, it's up to you to decode the byte and use it.<br/>
 
 # Todo
 - [] Matrix API
