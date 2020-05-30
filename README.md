@@ -13,23 +13,23 @@ import (
 )
 
 func main() {
-  if err := godotenv.Load(); err != nil {
-    log.Println("No .env file found")
-    return
+	if err := godotenv.Load(); err != nil {
+		og.Println("No .env file found")
+		return
 	}
 
 	mapbox, err := scully.New(os.Getenv("ACCESS_TOKEN"))
 
 	if err != nil {
-    log.Println(err)
-    return
+		log.Println(err)
+		return
 	}
 
 	response, err := mapbox.Matrix.GetMatrix(os.Getenv("TEST_POINTS"))
 
 	if err != nil {
-    log.Println(err)
-    return
+		log.Println(err)
+    		return
 	}
 
 }
