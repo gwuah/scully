@@ -15,7 +15,7 @@ import (
 
 func main() {
 	if err := godotenv.Load(); err != nil {
-		og.Println("No .env file found")
+		log.Println("No .env file found")
 		return
 	}
 
@@ -37,9 +37,11 @@ func main() {
 }
 ```
 
-# Why?
+# ReadMe (hehe)?
 
-Built for my own use in a tool T'm working on and I decided to open source it.
+I built this for my own use on a project I'm working on and I decided to open source it. <br/>
+So I don't even think it's ready for public consumption now. It works fine for me. <br/>
+Will make it more generic and add more features as time goes on. <br/>
 
 # Todo
 
