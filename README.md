@@ -9,7 +9,7 @@ package main
 
 import (
 	"fmt"
-  	"https://github.com/gwuah/scully"
+  	"github.com/gwuah/scully"
 )
 
 func main() {
