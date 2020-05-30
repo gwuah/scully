@@ -7,11 +7,16 @@ import (
 )
 
 type Matrix struct {
-	api *api.Api
+	api              *api.Api
+	destinationIndex string
 }
 
 func NewMatrix(apiInstance *api.Api) *Matrix {
 	return &Matrix{api: apiInstance}
+}
+
+func (m *Matrix) SetDestinationIndex(index string) {
+	m.destinationIndex = index
 }
 
 func (m *Matrix) GetMatrix(points string) (map[string]interface{}, error) {
@@ -20,7 +25,7 @@ func (m *Matrix) GetMatrix(points string) (map[string]interface{}, error) {
 	requestUrl, err := m.api.BuildRequest(urlParts, map[string]string{
 		"annotations":  "distance,duration",
 		"sources":      "all",
-		"destinations": "3",
+		"destinations": m.destinationIndex,
 	})
 
 	if err != nil {
