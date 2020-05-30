@@ -8,8 +8,8 @@ A golang wrapper around mapbox apis.
 package main
 
 import (
-  "fmt"
-  "https://github.com/gwuah/scully"
+	"fmt"
+  	"https://github.com/gwuah/scully"
 )
 
 func main() {
@@ -31,6 +31,7 @@ func main() {
 		log.Println(err)
     		return
 	}
+	log.Println(response)
 
 }
 ```
