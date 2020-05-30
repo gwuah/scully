@@ -6,7 +6,7 @@ import (
 
 func TestScully(t *testing.T) {
 	accessToken := "3974398477387473"
-	mapbox, err := NewScully(accessToken)
+	mapbox, err := New(accessToken)
 
 	if err != nil {
 		t.Error(t)

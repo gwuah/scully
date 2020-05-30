@@ -10,7 +10,7 @@ type Scully struct {
 	Matrix *matrix.Matrix
 }
 
-func NewScully(token string) (*Scully, error) {
+func New(token string) (*Scully, error) {
 	s := &Scully{}
 
 	apiInstance, err := api.NewApi(token)
