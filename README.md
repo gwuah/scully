@@ -1,5 +1,6 @@
 # scully
-A golang wrapper around mapbox apis. 
+
+A golang wrapper around mapbox apis.
 
 # Usage
 
@@ -19,9 +20,9 @@ func main() {
 ```
 
 # Why?
-I'm working on a tool using go and couldn't find a golang mapbox library that suited me.<br/>
-So I set out to create one for my usage. Hopefully it helps you too.<br/>
-It returns pure json, unparsed, it's up to you to decode the byte and use it.<br/>
+
+Built for my own use in a tool T'm working on and I decided to open source it.
 
 # Todo
+
 - [] Matrix API
